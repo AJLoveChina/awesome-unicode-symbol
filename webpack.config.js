@@ -88,7 +88,7 @@ module.exports = {
         port: 9000,
         open: false,
         publicPath: "/",
-        writeToDisk: true,
+        writeToDisk: false,
     },
     plugins: [
         new HtmlWebpackPlugin({

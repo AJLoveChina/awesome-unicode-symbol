@@ -4,7 +4,8 @@
   "description": "> <b>非常炫酷的unicode字符, 并归类整理(所有的字符/符号都可以用于网页丶微信丶QQ丶编辑器, 因为它们就是unicode编码的一份子)</b>",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "clipboard": "^2.0.4",
     "normalize.css": "^8.0.1"
   }
 }
