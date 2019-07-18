@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  padding:20px;
+  width:100%;
+  max-width:1000px;
+
+
+  @w:30px;
+  .char{
+    display: inline-block;
+    width:@w;
+    height:@w;
+    text-align: center;
+    line-height: @w;
+    border:1px solid #ccc;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 2px;
+    margin:2px;
+  }
+  .name {
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    padding:0 0 10px;
+  }
+  .desc {
+    border-left: 4px solid #ccc;
+    padding:0 0 0 10px;
+    line-height: 30px;
+  }
+}
