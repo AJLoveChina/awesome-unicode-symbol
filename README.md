@@ -1,4 +1,5 @@
-## awesome-unicode-symbol
+## awesome-unicode-symbol [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/AJLoveChina/awesome-unicode-symbol)
+
 > <b>非常炫酷的unicode字符, 并归类整理(所有的字符/符号都可以用于网页丶微信丶QQ丶编辑器, 因为它们就是unicode编码的一份子)</b>
 
 
