@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -28,6 +29,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+    entry: {
+        index: "./src/index.js",
+    },
     module: {
         rules: [
             {
@@ -52,28 +56,18 @@ module.exports = {
             {
                 test: /\.(less|css)$/,
 
-                use: [{
-                    loader: 'style-loader' // creates style nodes from JS strings
-                    },
-                    {
-                        loader: 'css-loader',
-
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'less-loader',
-
-                        options: {
-                            sourceMap: true
-                        }
-                    }
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader',
                 ]
             }
         ]
     },
 
+    resolve: {
+        extensions: ['.js', '.css', '.less']
+    },
     output: {
         path: path.resolve(__dirname, './dist'),
         chunkFilename: '[name].[chunkhash].js',
