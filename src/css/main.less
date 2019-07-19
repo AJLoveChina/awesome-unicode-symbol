@@ -1,11 +1,22 @@
 *{
   box-sizing: border-box;
 }
+h1,h2,h3,h4,h5,h6{
+  margin:5px;padding:0;
+}
+
+.click-me-to-copy-selected{
+  visibility: hidden;
+}
+
+.panel .title{
+  margin:10px 0;
+}
 .container{
   padding:20px;
   width:100%;
   max-width:1000px;
-
+  margin:0 auto;
 
   @w:30px;
   .char{
@@ -41,17 +52,26 @@
 .forkme{
   position: fixed;
   top:0;right:0;
+  visibility: visible!important;
 }
 
 #copy-tip {
   font-size: 14px;
   border: 1px solid #ccc;
   padding: 10px 20px;
-  background: rgba(211, 211, 211, 0.3);
+  background: white;
   box-shadow:black 0 0 10px;
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   visibility:hidden;
+}
+
+.select-symbol{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  min-height: 40px;
+  line-height: 20px;
 }

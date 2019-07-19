@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 /*
  * SplitChunksPlugin is enabled by default and replaced
@@ -101,7 +102,8 @@ module.exports = {
                 to: 'static',
                 ignore: ['.*']
             }
-        ])
+        ]),
+        new CleanWebpackPlugin(),
     ],
 
     optimization: {

@@ -2,6 +2,8 @@
 
 > <b>非常炫酷的unicode字符, 并归类整理(所有的字符/符号都可以用于网页丶微信丶QQ丶编辑器, 因为它们就是unicode编码的一份子)</b>
 
+[Demo Page](https://github.com/AJLoveChina/awesome-unicode-symbol)
+<img src="./static/awesome-unicode-symbol.gif" />
 
 ## emoji
 
